@@ -1,0 +1,707 @@
+import type { FeaturedProperty } from '../types/property'
+
+export const featuredProperties: FeaturedProperty[] = [
+  {
+    id: 'bel-air-mansion-01',
+    slug: 'bel-air-skyline-villa',
+    featured: true,
+    featuredLabel: 'Featured Luxury',
+    featuredScore: 98,
+
+    propertyType: 'Villa',
+    status: 'For Sales',
+    location: 'Beverly Hills, CA',
+    district: 'Beverly Hills',
+
+    imageSrc: '/images/property-1.jpg',
+    imageAlt: 'Bel Air luxury villa',
+
+    price: '$4,250,000',
+    title: 'Bel Air Skyline Villa',
+    address: '1021 Summit Dr, Beverly Hills, CA',
+    shortDescription: 'Sculpted modern estate with panoramic views, indoor-outdoor living, and concierge-grade finishes.',
+    longDescription:
+      'Perched atop the prestigious Bel Air summit, this sculpted modern estate commands uninterrupted panoramic views from the Pacific Ocean to the downtown skyline. Every inch of the residence has been curated for the discerning buyer — from the Italian marble foyer to the floating glass staircase. The open-plan great room flows seamlessly to an infinity-edge terrace, where indoor-outdoor living reaches new heights. A private elevator services all four levels, while the chef’s kitchen features Gaggenau appliances, onyx countertops, and a climate-controlled wine wall. The master suite occupies the entire top floor, complete with a spa-like bath, dual walk-in closets, and a private sky lounge. Outside, the resort-inspired grounds include a负-edge pool, fire pit lounge, and sculpted gardens with automated irrigation.',
+
+    propertyFeatures: ['Infinity pool', 'Private elevator', 'Smart climate', 'Chef\'s kitchen', 'Marble finishes'],
+
+    bedrooms: 5,
+    bathrooms: 6,
+    garage: '3-car',
+    areaSqft: 6420,
+
+    agent: {
+      name: 'William Seklo',
+      photo: '/images/author.jpg',
+      phone: '+1 (555) 013-2048',
+      email: 'william@homeverse.com',
+      title: 'Senior Estate Agent',
+    },
+    agentAvatarSrc: '/images/author.jpg',
+    agentName: 'William Seklo',
+
+    dateAddedMs: Date.parse('2026-06-14T10:00:00Z'),
+    dateAddedLabel: 'Jun 14, 2026',
+
+    gallery: [
+      '/images/property-1.jpg',
+      '/images/property-2.jpg',
+      '/images/property-3.jpg',
+      '/images/property-4.png',
+    ],
+    amenities: [
+      { label: 'Swimming Pool', value: 'Infinity Edge' },
+      { label: 'Private Garden', value: 'Landscaped' },
+      { label: 'Smart Home', value: 'Fully Automated' },
+      { label: 'Parking', value: '3-Car Garage' },
+      { label: 'Security', value: '24/7 Gated' },
+      { label: 'Gym', value: 'Private Fitness' },
+      { label: 'Club House', value: 'Residents Only' },
+      { label: 'High-Speed Internet', value: 'Fiber Optic' },
+      { label: 'Kids Area', value: 'Playroom' },
+    ],
+    floorPlan: '/images/property-2.jpg',
+    mapLocation: {
+      lat: 34.0825,
+      lng: -118.4321,
+      address: '1021 Summit Dr, Beverly Hills, CA 90210',
+      nearbySchools: ['Beverly Hills High School', 'Horace Mann School', 'El Rodeo Elementary'],
+      nearbyHospitals: ['Cedars-Sinai Medical Center', 'UCLA Medical Center'],
+      nearbyMalls: ['Beverly Center', 'The Grove', 'Rodeo Drive Boutiques'],
+      nearbyAirport: 'Los Angeles International (LAX) — 12 miles',
+    },
+    specifications: {
+      propertyType: 'Single Family Villa',
+      finishing: 'Premium Italian Marble',
+      deliveryDate: 'Ready to Move',
+      ownership: 'Freehold',
+      view: 'Panoramic City & Ocean',
+      floor: '4 Levels + Roof Terrace',
+    },
+  },
+  {
+    id: 'soho-penthouse-02',
+    slug: 'soho-crown-penthouse',
+    featured: true,
+    featuredLabel: 'Featured Luxury',
+    featuredScore: 95,
+
+    propertyType: 'Penthouse',
+    status: 'For Sales',
+    location: 'Manhattan, NY',
+    district: 'SoHo',
+
+    imageSrc: '/images/property-2.jpg',
+    imageAlt: 'Soho penthouse',
+
+    price: '$2,950,000',
+    title: 'SoHo Crown Penthouse',
+    address: '55 Mercer St #PH2, New York, NY',
+    shortDescription: 'Corner residence with soaring ceilings, gallery walls, and a sunlit terrace built for entertaining.',
+    longDescription:
+      'Commanding the crown of a landmark SoHo building, this corner penthouse is a masterpiece of light and space. Soaring 14-foot ceilings with exposed timber beams frame a great room that opens onto a 600-square-foot private terrace — perfect for alfresco dining and city entertaining. The chef’s kitchen is outfitted with Calacatta marble, custom millwork, and a full suite of Miele appliances. The primary suite features a walk-in dressing room and a five-fixture bath with soaking tub and steam shower. Wide-plank white oak floors, a gas fireplace, and smart home integration complete this unparalleled residence.',
+
+    propertyFeatures: ['Terrace dining', 'Floor-to-ceiling windows', 'Onyx bath', 'Doorman service', 'Hardwood crafted'],
+
+    bedrooms: 3,
+    bathrooms: 4,
+    garage: 'Attached',
+    areaSqft: 3125,
+
+    agent: {
+      name: 'Sophia Hart',
+      photo: '/images/author.jpg',
+      phone: '+1 (555) 013-2049',
+      email: 'sophia@homeverse.com',
+      title: 'Luxury Property Specialist',
+    },
+    agentAvatarSrc: '/images/author.jpg',
+    agentName: 'Sophia Hart',
+
+    dateAddedMs: Date.parse('2026-05-27T10:00:00Z'),
+    dateAddedLabel: 'May 27, 2026',
+
+    gallery: [
+      '/images/property-2.jpg',
+      '/images/property-3.jpg',
+      '/images/property-1.jpg',
+      '/images/property-4.png',
+    ],
+    amenities: [
+      { label: 'Swimming Pool', value: 'Rooftop Infinity' },
+      { label: 'Private Garden', value: 'Terrace Garden' },
+      { label: 'Smart Home', value: 'Automated System' },
+      { label: 'Parking', value: 'Attached Garage' },
+      { label: 'Security', value: '24/7 Doorman' },
+      { label: 'Gym', value: 'Building Fitness' },
+      { label: 'Club House', value: 'Residents Lounge' },
+      { label: 'High-Speed Internet', value: 'Fiber Ready' },
+      { label: 'Kids Area', value: 'Playroom' },
+    ],
+    floorPlan: '/images/property-3.jpg',
+    mapLocation: {
+      lat: 40.7227,
+      lng: -74.0019,
+      address: '55 Mercer St #PH2, New York, NY 10013',
+      nearbySchools: ['PS 234 Independence School', 'Middle School 297', 'Stuyvesant High School'],
+      nearbyHospitals: ['NYU Langone Health', 'Mount Sinai Beth Israel'],
+      nearbyMalls: ['SoHo Shopping District', 'Westfield World Trade Center', 'Brookfield Place'],
+      nearbyAirport: 'Newark Liberty (EWR) — 11 miles',
+    },
+    specifications: {
+      propertyType: 'Penthouse Apartment',
+      finishing: 'Calacatta Marble & Oak',
+      deliveryDate: 'Ready to Move',
+      ownership: 'Condominium',
+      view: 'City Skyline & Hudson River',
+      floor: 'Top Floor (PH2)',
+    },
+  },
+  {
+    id: 'naperville-townhome-03',
+    slug: 'riverlight-townhome-retreat',
+    featured: true,
+    featuredLabel: 'Featured Luxury',
+    featuredScore: 90,
+
+    propertyType: 'Townhome',
+    status: 'For Rent',
+    location: 'Naperville, IL',
+    district: 'Naperville',
+
+    imageSrc: '/images/property-3.jpg',
+    imageAlt: 'Naperville townhome',
+
+    price: '$7,900/Month',
+    title: 'Riverlight Townhome Retreat',
+    address: '18 Wyndmere Ln, Naperville, IL',
+    shortDescription: 'Private river-view townhome with premium upgrades, elegant lighting, and quiet luxury comfort.',
+    longDescription:
+      'Set along the peaceful banks of the DuPage River, this river-view townhome offers an elevated rental experience. The open-concept main level features wide-plank hardwood floors, a gourmet kitchen with quartz island and Bosch appliances, and a sunlit living area with floor-to-ceiling windows. Upstairs, the primary suite boasts a spa shower, dual vanities, and custom walk-in closets. The finished lower level adds a media room and wet bar, while the private garage and lake-view balcony extend the living space outdoors. Every detail has been thoughtfully curated for quiet luxury comfort.',
+
+    propertyFeatures: ['Lake-view balcony', 'Gourmet island', 'Walk-in closets', 'Private garage', 'Quiet cul-de-sac'],
+
+    bedrooms: 4,
+    bathrooms: 3,
+    garage: '2-car',
+    areaSqft: 2780,
+
+    agent: {
+      name: 'David Coleman',
+      photo: '/images/author.jpg',
+      phone: '+1 (555) 013-2050',
+      email: 'david@homeverse.com',
+      title: 'Rental Portfolio Manager',
+    },
+    agentAvatarSrc: '/images/author.jpg',
+    agentName: 'David Coleman',
+
+    dateAddedMs: Date.parse('2026-04-19T10:00:00Z'),
+    dateAddedLabel: 'Apr 19, 2026',
+
+    gallery: [
+      '/images/property-3.jpg',
+      '/images/property-4.png',
+      '/images/property-1.jpg',
+      '/images/property-2.jpg',
+    ],
+    amenities: [
+      { label: 'Swimming Pool', value: 'Community Pool' },
+      { label: 'Private Garden', value: 'Balcony Garden' },
+      { label: 'Smart Home', value: 'Smart Thermostat' },
+      { label: 'Parking', value: '2-Car Garage' },
+      { label: 'Security', value: 'Gated Entry' },
+      { label: 'Gym', value: 'Community Fitness' },
+      { label: 'Club House', value: 'Residents Club' },
+      { label: 'High-Speed Internet', value: 'Cable Ready' },
+      { label: 'Kids Area', value: 'Playground' },
+    ],
+    floorPlan: '/images/property-1.jpg',
+    mapLocation: {
+      lat: 41.7612,
+      lng: -88.1539,
+      address: '18 Wyndmere Ln, Naperville, IL 60540',
+      nearbySchools: ['Naperville Central High School', 'Kennedy Middle School', 'River Woods Elementary'],
+      nearbyHospitals: ['Edward Hospital', 'Northwestern Medicine Delnor'],
+      nearbyMalls: ['Naperville Shopping Center', 'Fox Valley Mall'],
+      nearbyAirport: 'Chicago O\'Hare (ORD) — 28 miles',
+    },
+    specifications: {
+      propertyType: 'Townhome',
+      finishing: 'Premium Hardwood & Quartz',
+      deliveryDate: 'Immediate Move-In',
+      ownership: 'Leasehold',
+      view: 'River & Lake View',
+      floor: '3 Levels + Basement',
+    },
+  },
+  {
+    id: 'mayfair-condo-04',
+    slug: 'mayfair-executive-condo',
+    featured: true,
+    featuredLabel: 'Featured Luxury',
+    featuredScore: 88,
+
+    propertyType: 'Condo',
+    status: 'For Sales',
+    location: 'Chicago, IL',
+    district: 'Mayfair',
+
+    imageSrc: '/images/property-4.png',
+    imageAlt: 'Mayfair condo',
+
+    price: '$1,185,000',
+    title: 'Mayfair Executive Condo',
+    address: '901 Lakeview Ave #1208, Chicago, IL',
+    shortDescription: 'A refined high-floor condo with skyline views, resort amenities, and a calm, tailored interior.',
+    longDescription:
+      'Perched on the 12th floor in the heart of Mayfair, this refined executive condo offers sweeping views of Lake Michigan and the Chicago skyline. The interior has been tailored for sophisticated living, with wide-plank white oak floors, custom millwork, and an open-concept layout that floods the space with natural light. The kitchen features quartz counters, a waterfall island, and integrated smart appliances. The primary suite includes a spa-inspired bath with rainfall shower and soaking tub. Building amenities include 24-hour concierge, a state-of-the-art fitness center, and a rooftop infinity pool.',
+
+    propertyFeatures: ['Fitness spa', 'Concierge', 'Quartz counters', 'Smart lighting', 'Secure parking'],
+
+    bedrooms: 2,
+    bathrooms: 2,
+    garage: '1-car',
+    areaSqft: 1425,
+
+    agent: {
+      name: 'William Seklo',
+      photo: '/images/author.jpg',
+      phone: '+1 (555) 013-2048',
+      email: 'william@homeverse.com',
+      title: 'Senior Estate Agent',
+    },
+    agentAvatarSrc: '/images/author.jpg',
+    agentName: 'William Seklo',
+
+    dateAddedMs: Date.parse('2026-03-08T10:00:00Z'),
+    dateAddedLabel: 'Mar 08, 2026',
+
+    gallery: [
+      '/images/property-4.png',
+      '/images/property-1.jpg',
+      '/images/property-2.jpg',
+      '/images/property-3.jpg',
+    ],
+    amenities: [
+      { label: 'Swimming Pool', value: 'Rooftop Infinity' },
+      { label: 'Private Garden', value: 'Rooftop Terrace' },
+      { label: 'Smart Home', value: 'Smart Lighting' },
+      { label: 'Parking', value: '1-Car Garage' },
+      { label: 'Security', value: '24/7 Concierge' },
+      { label: 'Gym', value: 'State-of-the-Art' },
+      { label: 'Club House', value: 'Residents Lounge' },
+      { label: 'High-Speed Internet', value: 'Fiber Optic' },
+      { label: 'Kids Area', value: 'Indoor Playroom' },
+    ],
+    floorPlan: '/images/property-2.jpg',
+    mapLocation: {
+      lat: 41.8781,
+      lng: -87.6298,
+      address: '901 Lakeview Ave #1208, Chicago, IL 60614',
+      nearbySchools: ['Lincoln Park High School', 'Nettlehorst Elementary', 'Latin School of Chicago'],
+      nearbyHospitals: ['Northwestern Memorial Hospital', 'UI Health'],
+      nearbyMalls: ['Water Tower Place', 'The Shops at North Bridge', '900 North Michigan Shops'],
+      nearbyAirport: 'Chicago O\'Hare (ORD) — 16 miles',
+    },
+    specifications: {
+      propertyType: 'Condominium',
+      finishing: 'Quartz & White Oak',
+      deliveryDate: 'Ready to Move',
+      ownership: 'Condominium',
+      view: 'Lake Michigan & Skyline',
+      floor: '12th Floor',
+    },
+  },
+  {
+    id: 'scottsdale-villa-05',
+    slug: 'desert-mirage-villa',
+    featured: true,
+    featuredLabel: 'Featured Luxury',
+    featuredScore: 92,
+
+    propertyType: 'Villa',
+    status: 'For Rent',
+    location: 'Scottsdale, AZ',
+    district: 'Scottsdale',
+
+    imageSrc: '/images/property-1.jpg',
+    imageAlt: 'Scottsdale villa',
+
+    price: '$12,500/Month',
+    title: 'Desert Mirage Villa',
+    address: '7420 Cactus Ridge, Scottsdale, AZ',
+    shortDescription: 'Luxurious desert estate featuring a resort-style pool, shaded lounge terraces, and curated privacy.',
+    longDescription:
+      'Nestled against the dramatic Sonoran Desert landscape, this luxurious estate offers an unparalleled resort-style living experience. The heart of the home is the great room, where retractable glass walls dissolve the boundary between indoors and outdoors. The resort-style pool with cascading waterfall is surrounded by shaded lounge terraces and an outdoor kitchen with wood-fired pizza oven. The primary suite is a private sanctuary with a spa bath, steam shower, and direct patio access. Solar-ready design and smart home technology ensure both luxury and sustainability. The property is fully furnished and available for premium seasonal or annual lease.',
+
+    propertyFeatures: ['Resort pool', 'Outdoor kitchen', 'Solar-ready design', 'Private gate', 'Chef-grade appliances'],
+
+    bedrooms: 4,
+    bathrooms: 4,
+    garage: '3-car',
+    areaSqft: 3890,
+
+    agent: {
+      name: 'Sophia Hart',
+      photo: '/images/author.jpg',
+      phone: '+1 (555) 013-2049',
+      email: 'sophia@homeverse.com',
+      title: 'Luxury Property Specialist',
+    },
+    agentAvatarSrc: '/images/author.jpg',
+    agentName: 'Sophia Hart',
+
+    dateAddedMs: Date.parse('2026-02-21T10:00:00Z'),
+    dateAddedLabel: 'Feb 21, 2026',
+
+    gallery: [
+      '/images/property-1.jpg',
+      '/images/property-4.png',
+      '/images/property-2.jpg',
+      '/images/property-3.jpg',
+    ],
+    amenities: [
+      { label: 'Swimming Pool', value: 'Resort Infinity' },
+      { label: 'Private Garden', value: 'Desert Landscape' },
+      { label: 'Smart Home', value: 'Solar-Ready System' },
+      { label: 'Parking', value: '3-Car Garage' },
+      { label: 'Security', value: 'Gated & Guarded' },
+      { label: 'Gym', value: 'Private Home Gym' },
+      { label: 'Club House', value: 'Outdoor Lounge' },
+      { label: 'High-Speed Internet', value: 'Starlink Ready' },
+      { label: 'Kids Area', value: 'Pool & Play Area' },
+    ],
+    floorPlan: '/images/property-4.png',
+    mapLocation: {
+      lat: 33.5092,
+      lng: -111.8988,
+      address: '7420 Cactus Ridge, Scottsdale, AZ 85255',
+      nearbySchools: ['Desert Mountain High School', 'Copper Ridge Middle School', 'Basin Elementary'],
+      nearbyHospitals: ['HonorHealth Scottsdale', 'Mayo Clinic Hospital'],
+      nearbyMalls: ['Scottsdale Fashion Square', 'Kierland Commons', 'Old Town Scottsdale'],
+      nearbyAirport: 'Phoenix Sky Harbor (PHX) — 22 miles',
+    },
+    specifications: {
+      propertyType: 'Single Family Villa',
+      finishing: 'Desert Stone & Hardwood',
+      deliveryDate: 'Immediate Move-In',
+      ownership: 'Freehold',
+      view: 'Desert & Mountain Panorama',
+      floor: 'Single Level + Courtyard',
+    },
+  },
+  {
+    id: 'brooklyn-penthouse-06',
+    slug: 'williamsburg-skylight-penthouse',
+    featured: false,
+    featuredLabel: 'Premium Listing',
+    featuredScore: 70,
+
+    propertyType: 'Penthouse',
+    status: 'For Rent',
+    location: 'Brooklyn, NY',
+    district: 'Williamsburg',
+
+    imageSrc: '/images/property-2.jpg',
+    imageAlt: 'Brooklyn penthouse',
+
+    price: '$6,950/Month',
+    title: 'Williamsburg Skylight Penthouse',
+    address: '120 Wythe St #PH1, Brooklyn, NY',
+    shortDescription: 'Artful penthouse with warm textures, skyline lights, and a seamless indoor-to-terrace flow.',
+    longDescription:
+      'An artful penthouse in the heart of Williamsburg, this residence combines warm industrial textures with sweeping skyline views. The living area features a gas fireplace flanked by custom cabinetry, and opens through NanaWall doors to a private terrace with built-in seating and planters. The kitchen is a study in contrasts — blackened steel, warm oak, and Italian marble. The primary suite includes a walk-in closet and a spa bath with dual rainfall shower. Designer lighting throughout creates an ever-changing atmosphere from day to night.',
+
+    propertyFeatures: ['Private terrace', 'Fireplace lounge', 'Smart security', 'Designer finishes', 'Custom cabinetry'],
+
+    bedrooms: 3,
+    bathrooms: 3,
+    garage: 'Attached',
+    areaSqft: 2400,
+
+    agent: {
+      name: 'David Coleman',
+      photo: '/images/author.jpg',
+      phone: '+1 (555) 013-2050',
+      email: 'david@homeverse.com',
+      title: 'Rental Portfolio Manager',
+    },
+    agentAvatarSrc: '/images/author.jpg',
+    agentName: 'David Coleman',
+
+    dateAddedMs: Date.parse('2026-01-30T10:00:00Z'),
+    dateAddedLabel: 'Jan 30, 2026',
+
+    gallery: [
+      '/images/property-2.jpg',
+      '/images/property-3.jpg',
+      '/images/property-4.png',
+      '/images/property-1.jpg',
+    ],
+    amenities: [
+      { label: 'Swimming Pool', value: 'Rooftop Pool' },
+      { label: 'Private Garden', value: 'Terrace Garden' },
+      { label: 'Smart Home', value: 'Smart Security' },
+      { label: 'Parking', value: 'Attached Parking' },
+      { label: 'Security', value: 'Video Intercom' },
+      { label: 'Gym', value: 'Building Gym' },
+      { label: 'Club House', value: 'Rooftop Lounge' },
+      { label: 'High-Speed Internet', value: 'Fiber Optic' },
+      { label: 'Kids Area', value: 'Community Room' },
+    ],
+    floorPlan: '/images/property-1.jpg',
+    mapLocation: {
+      lat: 40.7039,
+      lng: -73.9578,
+      address: '120 Wythe St #PH1, Brooklyn, NY 11249',
+      nearbySchools: ['PS 17 Henry D Woodworth', 'MS 577', 'Williamsburg High School'],
+      nearbyHospitals: ['Woodhull Medical Center', 'NYC Health + Hospitals'],
+      nearbyMalls: ['Williamsburg Shopping District', 'Westfield World Trade Center'],
+      nearbyAirport: 'LaGuardia (LGA) — 8 miles',
+    },
+    specifications: {
+      propertyType: 'Penthouse Apartment',
+      finishing: 'Italian Marble & Oak',
+      deliveryDate: 'Immediate Move-In',
+      ownership: 'Leasehold',
+      view: 'Manhattan Skyline',
+      floor: 'Top Floor (PH1)',
+    },
+  },
+  {
+    id: 'austin-townhome-07',
+    slug: 'lakeside-luxury-townhome',
+    featured: true,
+    featuredLabel: 'Featured Luxury',
+    featuredScore: 86,
+
+    propertyType: 'Townhome',
+    status: 'For Sales',
+    location: 'Austin, TX',
+    district: 'Lake Austin',
+
+    imageSrc: '/images/property-3.jpg',
+    imageAlt: 'Austin townhome',
+
+    price: '$890,000',
+    title: 'Lakeside Luxury Townhome',
+    address: '3100 Emerald Shore, Austin, TX',
+    shortDescription: 'A high-comfort townhome with elevated details, serene lake atmosphere, and airy open-plan design.',
+    longDescription:
+      'Set along the shimmering shores of Lake Austin, this luxury townhome offers serene water views from every level. The open-plan design features soaring ceilings, a gourmet kitchen with waterfall island, and a great room anchored by a contemporary fireplace. Floor-to-ceiling windows frame the lake panorama, while the primary suite offers a spa shower, dual vanities, and a private balcony. Smart home integration, thermal windows, and low HOA fees make this an exceptional value in Austin\'s most coveted lakefront community.',
+
+    propertyFeatures: ['Lake breeze balcony', 'Spa shower', 'Thermal windows', 'Chef island', 'Low HOA'],
+
+    bedrooms: 3,
+    bathrooms: 3,
+    garage: '2-car',
+    areaSqft: 1850,
+
+    agent: {
+      name: 'William Seklo',
+      photo: '/images/author.jpg',
+      phone: '+1 (555) 013-2048',
+      email: 'william@homeverse.com',
+      title: 'Senior Estate Agent',
+    },
+    agentAvatarSrc: '/images/author.jpg',
+    agentName: 'William Seklo',
+
+    dateAddedMs: Date.parse('2025-12-12T10:00:00Z'),
+    dateAddedLabel: 'Dec 12, 2025',
+
+    gallery: [
+      '/images/property-3.jpg',
+      '/images/property-4.png',
+      '/images/property-1.jpg',
+      '/images/property-2.jpg',
+    ],
+    amenities: [
+      { label: 'Swimming Pool', value: 'Lake Access' },
+      { label: 'Private Garden', value: 'Balcony Garden' },
+      { label: 'Smart Home', value: 'Smart Thermostat' },
+      { label: 'Parking', value: '2-Car Garage' },
+      { label: 'Security', value: 'Gated Community' },
+      { label: 'Gym', value: 'Community Fitness' },
+      { label: 'Club House', value: 'Lakefront Club' },
+      { label: 'High-Speed Internet', value: 'Fiber Ready' },
+      { label: 'Kids Area', value: 'Lake Park' },
+    ],
+    floorPlan: '/images/property-2.jpg',
+    mapLocation: {
+      lat: 30.3070,
+      lng: -97.8404,
+      address: '3100 Emerald Shore, Austin, TX 78703',
+      nearbySchools: ['Austin High School', 'O Henry Middle School', 'Mathews Elementary'],
+      nearbyHospitals: ['Seton Medical Center', 'Dell Seton Medical Center'],
+      nearbyMalls: ['The Domain', 'South Congress Shopping', 'Arboretum Market'],
+      nearbyAirport: 'Austin-Bergstrom (AUS) — 15 miles',
+    },
+    specifications: {
+      propertyType: 'Townhome',
+      finishing: 'Engineered Hardwood & Quartz',
+      deliveryDate: 'Ready to Move',
+      ownership: 'Freehold',
+      view: 'Lake Austin Panorama',
+      floor: '3 Levels',
+    },
+  },
+  {
+    id: 'miami-condo-08',
+    slug: 'oceanline-corner-condo',
+    featured: false,
+    featuredLabel: 'Premium Listing',
+    featuredScore: 65,
+
+    propertyType: 'Condo',
+    status: 'For Sales',
+    location: 'Miami, FL',
+    district: 'Brickell',
+
+    imageSrc: '/images/property-4.png',
+    imageAlt: 'Miami condo',
+
+    price: '$1,420,000',
+    title: 'Oceanline Corner Condo',
+    address: '2000 Bayfront Blvd #1804, Miami, FL',
+    shortDescription: 'A bright corner condo with ocean-breeze interiors, premium appliances, and hotel-level amenities.',
+    longDescription:
+      'Situated in the heart of Brickell, this bright corner condo captures ocean breezes and breathtaking bay views from every room. The interiors feature porcelain tile floors, floor-to-ceiling impact windows, and a contemporary kitchen with quartz countertops and Bosch appliances. The primary suite boasts a marble bar area and a spa-inspired bath. Building amenities rival the finest hotels: infinity pool, state-of-the-art fitness center, private cinema, and 24-hour valet parking. The corner exposure ensures natural light throughout the day and spectacular sunset views.',
+
+    propertyFeatures: ['Ocean-view lounge', 'Concierge', 'Marble bar', 'Infinity pool', 'Valet parking'],
+
+    bedrooms: 2,
+    bathrooms: 2,
+    garage: '1-car',
+    areaSqft: 1605,
+
+    agent: {
+      name: 'Sophia Hart',
+      photo: '/images/author.jpg',
+      phone: '+1 (555) 013-2049',
+      email: 'sophia@homeverse.com',
+      title: 'Luxury Property Specialist',
+    },
+    agentAvatarSrc: '/images/author.jpg',
+    agentName: 'Sophia Hart',
+
+    dateAddedMs: Date.parse('2025-11-18T10:00:00Z'),
+    dateAddedLabel: 'Nov 18, 2025',
+
+    gallery: [
+      '/images/property-4.png',
+      '/images/property-1.jpg',
+      '/images/property-2.jpg',
+      '/images/property-3.jpg',
+    ],
+    amenities: [
+      { label: 'Swimming Pool', value: 'Infinity Pool' },
+      { label: 'Private Garden', value: 'Bayfront Promenade' },
+      { label: 'Smart Home', value: 'Smart Access' },
+      { label: 'Parking', value: 'Valet Parking' },
+      { label: 'Security', value: '24/7 Concierge' },
+      { label: 'Gym', value: 'State-of-the-Art' },
+      { label: 'Club House', value: 'Private Cinema' },
+      { label: 'High-Speed Internet', value: 'Fiber Optic' },
+      { label: 'Kids Area', value: 'Indoor Playroom' },
+    ],
+    floorPlan: '/images/property-3.jpg',
+    mapLocation: {
+      lat: 25.7587,
+      lng: -80.1920,
+      address: '2000 Bayfront Blvd #1804, Miami, FL 33129',
+      nearbySchools: ['Brickell Preparatory School', 'Southside Elementary', 'Miami High School'],
+      nearbyHospitals: ['Baptist Hospital of Miami', 'Jackson Memorial Hospital'],
+      nearbyMalls: ['Brickell City Centre', 'Mary Brickell Village', 'Dadeland Mall'],
+      nearbyAirport: 'Miami International (MIA) — 8 miles',
+    },
+    specifications: {
+      propertyType: 'Condominium',
+      finishing: 'Porcelain Tile & Quartz',
+      deliveryDate: 'Ready to Move',
+      ownership: 'Condominium',
+      view: 'Bay & Ocean View',
+      floor: '18th Floor',
+    },
+  },
+  {
+    id: 'seattle-villa-09',
+    slug: 'pinecrest-horizon-villa',
+    featured: true,
+    featuredLabel: 'Featured Luxury',
+    featuredScore: 84,
+
+    propertyType: 'Villa',
+    status: 'For Sales',
+    location: 'Seattle, WA',
+    district: 'Pinecrest',
+
+    imageSrc: '/images/property-1.jpg',
+    imageAlt: 'Seattle villa',
+
+    price: '$1,950,000',
+    title: 'Pinecrest Horizon Villa',
+    address: '19 Mercer Falls Rd, Seattle, WA',
+    shortDescription: 'A serene, light-filled villa with vaulted spaces, refined gardens, and quiet luxury throughout.',
+    longDescription:
+      'Tucked into the verdant hills of Pinecrest, this light-filled villa is a study in serene luxury. Vaulted cedar ceilings define the great room, where a stone fireplace anchors the space and walls of glass frame views of the Olympic Mountains. The chef’s kitchen features custom cabinetry, leathered granite countertops, and a walk-in pantry. The primary suite occupies its own wing, with a spa bath, private garden access, and a custom wine wall. Outside, the terraced gardens feature native plantings, a stone patio with fire pit, and meandering paths through old-growth trees.',
+
+    propertyFeatures: ['Garden terrace', 'Vaulted great room', 'Smart home', 'Wine wall', 'Stone fireplace'],
+
+    bedrooms: 4,
+    bathrooms: 3,
+    garage: '2-car',
+    areaSqft: 2675,
+
+    agent: {
+      name: 'David Coleman',
+      photo: '/images/author.jpg',
+      phone: '+1 (555) 013-2050',
+      email: 'david@homeverse.com',
+      title: 'Rental Portfolio Manager',
+    },
+    agentAvatarSrc: '/images/author.jpg',
+    agentName: 'David Coleman',
+
+    dateAddedMs: Date.parse('2025-10-04T10:00:00Z'),
+    dateAddedLabel: 'Oct 04, 2025',
+
+    gallery: [
+      '/images/property-1.jpg',
+      '/images/property-2.jpg',
+      '/images/property-3.jpg',
+      '/images/property-4.png',
+    ],
+    amenities: [
+      { label: 'Swimming Pool', value: 'Natural Pond' },
+      { label: 'Private Garden', value: 'Terraced Gardens' },
+      { label: 'Smart Home', value: 'Full Automation' },
+      { label: 'Parking', value: '2-Car Garage' },
+      { label: 'Security', value: 'Gated Entry' },
+      { label: 'Gym', value: 'Yoga & Fitness Room' },
+      { label: 'Club House', value: 'Wine Tasting Room' },
+      { label: 'High-Speed Internet', value: 'Fiber Optic' },
+      { label: 'Kids Area', value: 'Nature Play Area' },
+    ],
+    floorPlan: '/images/property-4.png',
+    mapLocation: {
+      lat: 47.6062,
+      lng: -122.3321,
+      address: '19 Mercer Falls Rd, Seattle, WA 98101',
+      nearbySchools: ['Garfield High School', 'Washington Middle School', 'McGilvra Elementary'],
+      nearbyHospitals: ['Swedish Medical Center', 'Virginia Mason Medical Center'],
+      nearbyMalls: ['Pacific Place', 'Westlake Center', 'University Village'],
+      nearbyAirport: 'Seattle-Tacoma (SEA) — 14 miles',
+    },
+    specifications: {
+      propertyType: 'Single Family Villa',
+      finishing: 'Cedar, Stone & Leathered Granite',
+      deliveryDate: 'Ready to Move',
+      ownership: 'Freehold',
+      view: 'Mountain & Forest View',
+      floor: '2 Levels + Garden Level',
+    },
+  },
+]
+
